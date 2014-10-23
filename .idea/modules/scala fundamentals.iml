@@ -6,6 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/../../project/src/main/scala" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../project/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../project/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
