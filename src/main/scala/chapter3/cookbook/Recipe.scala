@@ -10,8 +10,15 @@ case class Recipe (ingredients: Map[String, Mass], directions:List[String]) {
     for {
       (name, need) <- ingredients.toList
       have = kitchen.getOrElse(name, Grams(0))
-      if have.compareTo(need) < 0
+      if have < need
     } yield name
+}
+
+// Traits area now
+trait Measured {
+  def amount: Double
+  def symbol: String
+  override def toString: String = amount + symbol
 }
 
 // If we do "case class" all the code below is deprecated. Scala automatically does it for us.
@@ -54,20 +61,19 @@ object Cookbook {
 // Polymorphism and Inheritance
 // We switch everything to case classes now so we can get some auto generation
 // Also by using sealed here we do something similar to changing this to a "Final"
-sealed abstract class Mass extends Comparable[Mass] {
-  def amount: Double
+sealed abstract class Mass extends Ordered[Mass] with Measured {
   def toGrams: Grams
-  def compareTo(that: Mass): Int = (this.toGrams.amount - that.toGrams.amount).toInt
+  def compare(that: Mass): Int = (this.toGrams.amount - that.toGrams.amount).toInt
 }
 case class Grams(amount: Double) extends Mass {
-  override def toGrams: Grams = this
-  override def toString: String = amount + "g"
+  def toGrams = this
+  val symbol = "g"
 }
 case class Milligrams(amount: Double) extends Mass {
-  override def toGrams: Grams = Grams(amount / 1000)
-  override def toString: String = amount + "mg"
+  def toGrams = Grams(amount / 1000)
+  val symbol = "mg"
 }
 case class Kilograms(amount: Double) extends Mass {
-  override def toGrams: Grams = Grams(amount * 1000)
-  override def toString: String = amount + "kg"
+  def toGrams = Grams(amount * 1000)
+  val symbol = "kg"
 }

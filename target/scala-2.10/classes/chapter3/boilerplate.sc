@@ -38,3 +38,6 @@ Cookbook.pbj
 
 Cookbook.pbj.shoppingList(Map.empty)
 
+// Apparently 1KG is enough Peanut butter
+Cookbook.pbj.shoppingList(Map("Peanut butter" -> Kilograms(1)))
+
