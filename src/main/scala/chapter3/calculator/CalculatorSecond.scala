@@ -1,4 +1,4 @@
-package chapter2
+package chapter3.calculator
 import scala.collection.mutable.Stack
 
 /**
