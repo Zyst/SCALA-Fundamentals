@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d64a2788-688a-48ae-bd1c-6a0381a5e09b" name="Default" comment="">
-      <change type="DELETED" beforePath="K:\Documents\SCALA-Fundamentals\src\main\scala\chapter3\cookbook\Cookbook.scala" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/.xml" afterPath="$PROJECT_DIR$/.idea/libraries/.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/chapter3/cookbook/Recipe.scala" afterPath="$PROJECT_DIR$/src/main/scala/chapter3/cookbook/Recipe.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SCALA Fundamentals.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,41 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CalculatorSecond.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/calculator/CalculatorSecond.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1230">
-              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="singletonObjects.sc" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/singletonObjects.sc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2383655" vertical-offset="0" max-vertical-offset="881">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recipe.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Recipe.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/cookbook/Recipe.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.65648854" vertical-offset="103" max-vertical-offset="1020">
+              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="defClasses.sc" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/defClasses.sc">
+      <file leaf-file-name="boilerplate.sc" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/boilerplate.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="883">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.5618615" vertical-offset="0" max-vertical-offset="881">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,7 +77,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/chapter3/defClasses.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/chapter3/singletonObjects.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/chapter3/cookbook/Cookbook.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/chapter3/implementMethods.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/chapter3/cookbook/Recipe.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/chapter3/boilerplate.sc" />
       </list>
     </option>
   </component>
@@ -431,7 +409,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="preferences.general" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -1007,12 +985,12 @@
       <workItem from="1414214742187" duration="3117000" />
       <workItem from="1414259582246" duration="890000" />
       <workItem from="1414262681110" duration="630000" />
-      <workItem from="1414371600309" duration="1023000" />
+      <workItem from="1414371600309" duration="4825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19282000" />
+    <option name="totallyTimeSpent" value="23084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1072" extended-state="6" />
@@ -1389,9 +1367,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/singletonObjects.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2383655" vertical-offset="0" max-vertical-offset="881">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/calculator/CalculatorSecond.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
+        <state vertical-scroll-proportion="0.018538713" vertical-offset="313" max-vertical-offset="1230">
           <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding />
         </state>
@@ -1405,18 +1391,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/cookbook/Recipe.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/implementMethods.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.085130535" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/singletonObjects.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/boilerplate.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2383655" vertical-offset="0" max-vertical-offset="881">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5618615" vertical-offset="0" max-vertical-offset="881">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/chapter3/cookbook/Recipe.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65648854" vertical-offset="103" max-vertical-offset="1020">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
           <folding />
         </state>
       </provider>
