@@ -31,3 +31,13 @@ Cookbook.pbj.copy()
 // This now has "Ingredient Mass"
 Cookbook.pbj
 
+// The compiler would warn us here and tell us it'd fail for cases of Kilo/Miligrams
+//def printMasses(m: Mass) = m match {
+//  case Grams(amount) => println(amount + " grams")
+//}
+
+Cookbook.pbj.shoppingList(Map.empty)
+
+// Apparently 1KG is enough Peanut butter
+Cookbook.pbj.shoppingList(Map("Peanut butter" -> Kilograms(1)))
+

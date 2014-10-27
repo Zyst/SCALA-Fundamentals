@@ -5,7 +5,14 @@ package chapter3.cookbook
  */
 
 // By making this private we make the factory below (object) the only way to construct this
-case class Recipe (ingredients: Map[String, Mass], directions:List[String])
+case class Recipe (ingredients: Map[String, Mass], directions:List[String]) {
+  def shoppingList(kitchen: Map[String, Mass]): List[String] =
+    for {
+      (name, need) <- ingredients.toList
+      have = kitchen.getOrElse(name, Grams(0))
+      if have.compareTo(need) < 0
+    } yield name
+}
 
 // If we do "case class" all the code below is deprecated. Scala automatically does it for us.
 // We can also leave off "val" once we make this a case class
@@ -45,18 +52,22 @@ object Cookbook {
 }
 
 // Polymorphism and Inheritance
-abstract class Mass(val amount: Double) {
+// We switch everything to case classes now so we can get some auto generation
+// Also by using sealed here we do something similar to changing this to a "Final"
+sealed abstract class Mass extends Comparable[Mass] {
+  def amount: Double
   def toGrams: Grams
+  def compareTo(that: Mass): Int = (this.toGrams.amount - that.toGrams.amount).toInt
 }
-class Grams(amount: Double) extends Mass(amount) {
+case class Grams(amount: Double) extends Mass {
   override def toGrams: Grams = this
   override def toString: String = amount + "g"
 }
-class Milligrams(amount: Double) extends Mass(amount) {
-  override def toGrams: Grams = new Grams(amount / 1000)
+case class Milligrams(amount: Double) extends Mass {
+  override def toGrams: Grams = Grams(amount / 1000)
   override def toString: String = amount + "mg"
 }
-class Kilograms(amount: Double) extends Mass(amount) {
-  override def toGrams: Grams = new Grams(amount * 1000)
+case class Kilograms(amount: Double) extends Mass {
+  override def toGrams: Grams = Grams(amount * 1000)
   override def toString: String = amount + "kg"
 }
